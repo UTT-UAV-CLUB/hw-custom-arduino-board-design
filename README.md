@@ -1,78 +1,79 @@
 <div align="center">
 
-# Custom Arduino-Compatible Development Board
+# Board Phát Triển Tự Thiết Kế Tương Thích Arduino
 
-*Designed and documented by* [**Đỗ Bảo Đạt**](https://github.com/Datnewlevel)
+*Thiết kế và biên soạn tài liệu bởi* [**Đỗ Bảo Đạt**](https://github.com/Datnewlevel)
 
-[![Altium Designer](https://img.shields.io/badge/Design-Altium%20Designer-A5915F?style=flat-square)](#)
-[![Base](https://img.shields.io/badge/Compatible%20with-Arduino%20Uno%20R3-00979D?style=flat-square)](#)
+[![Altium Designer](https://img.shields.io/badge/Thi%E1%BA%BFt%20k%E1%BA%BF-Altium%20Designer-A5915F?style=flat-square)](#)
+[![Base](https://img.shields.io/badge/T%C6%B0%C6%A1ng%20th%C3%ADch%20v%E1%BB%9Bi-Arduino%20Uno%20R3-00979D?style=flat-square)](#)
 
 </div>
 
 <br>
 
-## Overview
+## Tổng quan
 
-A personal project to design a custom Arduino-compatible development board — a
-personalized take on the Arduino Uno R3 with a few targeted improvements.
+Một dự án cá nhân nhằm thiết kế board phát triển tương thích Arduino — phiên bản
+mang dấu ấn riêng của Arduino Uno R3 với một vài cải tiến có chủ đích.
 
-Instead of an onboard communication chip, the board uses an external USB-to-UART
-module built around the **FT232RL**, keeping the board itself simpler and the
-communication hardware swappable.
+Thay vì tích hợp chip giao tiếp trên board, thiết kế này sử dụng một module
+USB-to-UART rời dựa trên **FT232RL**, giúp board gọn nhẹ hơn và phần cứng giao
+tiếp có thể thay thế linh hoạt.
 
-## Improvements Over the Arduino Uno R3
+## Cải tiến so với Arduino Uno R3
 
-| Change | Detail |
+| Thay đổi | Chi tiết |
 | --- | --- |
-| **Extra power pins** | Additional header rows for 5V and 3.3V, making it easier to connect peripherals and modules without daisy-chaining off the existing rails |
-| **Custom layout** | Component placement and board outline redesigned for a personal touch and optimized for specific use cases |
+| **Bổ sung chân nguồn** | Thêm hàng header cho 5V và 3.3V, giúp kết nối ngoại vi và module dễ dàng hơn mà không phải đấu nối tiếp chồng lên các đường nguồn có sẵn |
+| **Layout tùy biến** | Vị trí linh kiện và đường viền board được thiết kế lại theo phong cách riêng và tối ưu cho các trường hợp sử dụng cụ thể |
 
-## Design Software
+## Phần mềm thiết kế
 
-Schematic and PCB layout were both designed in **Altium Designer**.
+Cả sơ đồ nguyên lý và layout PCB đều được thiết kế trên **Altium Designer**.
 
-## Project Images
+## Hình ảnh dự án
 
-**Schematic**
+**Sơ đồ nguyên lý**
 
-![Schematic](Schematic.png)
+![Sơ đồ nguyên lý](Schematic.png)
 
-**PCB Layout**
+**Layout PCB**
 
-![PCB Layout](PCB.png)
+![Layout PCB](PCB.png)
 
-**Finished Board**
+**Board hoàn thiện**
 
-![Finished Board](Circuit_board.jpg)
+![Board hoàn thiện](Circuit_board.jpg)
 
-**USB-to-UART Communication Module**
+**Module giao tiếp USB-to-UART**
 
-![USB to UART Module](Module_usb_to_uart.jpg)
+![Module USB to UART](Module_usb_to_uart.jpg)
 
-**Final Product**
+**Sản phẩm cuối**
 
-![Product Image](Hinh_anh_san_pham.jpg)
+![Hình ảnh sản phẩm](Hinh_anh_san_pham.jpg)
 
-## Board Testing
+## Kiểm thử board
 
-Basic peripheral tests run against the finished board to confirm functionality.
+Các bài test ngoại vi cơ bản được chạy trên board hoàn thiện để xác nhận board
+hoạt động đúng.
 
-**Temperature sensor (DHT11)**
+**Cảm biến nhiệt độ (DHT11)**
 
 | Test 1 | Test 2 |
 | --- | --- |
-| ![Temperature Test 1](test_temperature_1.jpg) | ![Temperature Test 2](test_temperature_2.jpg) |
+| ![Test nhiệt độ 1](test_temperature_1.jpg) | ![Test nhiệt độ 2](test_temperature_2.jpg) |
 
-**OLED display (0.96")**
+**Màn hình OLED (0.96")**
 
-![OLED Monitor Test](test_oled_moniter.jpg)
+![Test màn hình OLED](test_oled_moniter.jpg)
 
-**Ultrasonic sensor (SR04)**
+**Cảm biến siêu âm (SR04)**
 
-![SR04 Test](test_sr04.jpg)
+![Test SR04](test_sr04.jpg)
 
 ---
 
 <div align="center">
-<sub>Design and documentation © <a href="https://github.com/Datnewlevel">Đỗ Bảo Đạt</a>. Shared here as part of UTT UAV Club's hardware work.</sub>
+<sub>Thiết kế và tài liệu © <a href="https://github.com/Datnewlevel">Đỗ Bảo Đạt</a>. Được chia sẻ tại đây như một phần công việc phần cứng của CLB UTT UAV.</sub>
 </div>
